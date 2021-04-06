@@ -10,6 +10,10 @@ resource "aws_instance" "mynavec2" {
 
 }
 
+#resource "aws_s3_bucket" "navtfstate" {
+ # bucket = "epsilontraining3"
+#}
+
 output "mynavec2ipaddress" {
   value = aws_instance.mynavec2[*].public_ip
 }
